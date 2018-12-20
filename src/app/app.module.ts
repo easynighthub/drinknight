@@ -26,6 +26,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user/user.component';
+import { HomeDetalleComponent } from './home-detalle/home-detalle.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { UserComponent } from './user/user.component';
     // EventsComponent,
     // DetalleEventComponent,
     HomeComponent,
+    HomeDetalleComponent,
   ],
   imports: [
     BrowserModule,
