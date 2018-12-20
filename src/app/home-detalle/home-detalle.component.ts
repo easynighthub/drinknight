@@ -24,6 +24,20 @@ export class HomeDetalleComponent implements OnInit {
     this.eventsCollection = bd.collection<Event>('events');
     console.log(this.eventsCollection);
     this.events = this.eventsCollection.valueChanges();
+
+
+    bd.collection('events').add({
+      name: 'Los Angeles',
+      state: 'CA',
+      country: 'USA'
+  })
+  .then(function() {
+      console.log('Document successfully written!');
+  })
+  .catch(function(error) {
+      console.error('Error writing document: ', error);
+  });
+
     console.log(this.events);
    }
 
