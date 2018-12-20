@@ -47,7 +47,6 @@ export class UserComponent implements OnInit {
 
 
 
-
   }
 
   ngOnInit(): void {
