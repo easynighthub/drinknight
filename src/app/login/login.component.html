@@ -1,22 +1,9 @@
-<div class="pos-f-t">
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <h5 class="text-white h4">Collapsed content</h5>
-      <span class="text-muted">Toggleable via the navbar brand.</span>
-    </div>
-  </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
-</div>
+<h1 class="header">Lucky Burgers Chile </h1>
 
-<h1 class="header">INGRESAR </h1>
-<div class="container">
+<div class="container ">
   <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <form [formGroup]="loginForm">
+    <div class="col-md-12 col-md-offset-3">
+      <form  [formGroup]="loginForm">
         <div class="form-group">
           <label>Correo Electronico </label>
           <input type="email" formControlName="email" class="form-control">
@@ -30,13 +17,13 @@
       </form>
     </div>
   </div>
-  <div class="row">
+  <!--<div class="row">
     <div class="col-md-4 col-md-offset-4">
       <button type="button" class="btn btn-primary btn-block" (click)="tryFacebookLogin()">Ingresar con Facebook</button>
     </div>
-  </div>
+  </div> -->
  <div class="row">
-    <div class="col-md-4 col-md-offset-4">
+    <div class="col-md-12 col-md-offset-4">
       <button type="button" class="btn btn-danger btn-block" (click)="tryGoogleLogin()">Login with Google</button>
     </div>
   </div>
@@ -44,10 +31,10 @@
     <div class="col-md-4 col-md-offset-4">
       <button type="button" class="btn btn-info btn-block" (click)="tryTwitterLogin()">Login with Twitter</button>
     </div>
-  </div> -->
+  </div> 
   <div class="row">
     <div class="col-md-4 col-md-offset-4">
       <p> ¿ te deseas crear una cuenta? <a href="/register">Crear cuenta</a></p>
     </div>
-  </div>
+  </div>-->
 </div>
