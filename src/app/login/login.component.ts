@@ -9,7 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-
+  showFiller = false;
   loginForm: FormGroup;
   errorMessage: '';
 
