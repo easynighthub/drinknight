@@ -63,7 +63,7 @@ export class UserComponent implements OnInit {
         const provider = this.user.provider;
 
         const item: Item = { uid, name, email, image, provider};
-        this.itemsCollection.doc(uid).set(item);
+        // this.itemsCollection.doc(uid).set(item);
 
         this.createForm(this.user.name);
       }
