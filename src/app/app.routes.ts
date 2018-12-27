@@ -10,10 +10,10 @@ import { HomeComponent } from './home/home.component';
 
 export const rootRouterConfig: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent, canActivate: [AuthGuard]},
-  { path: 'home', component: HomeComponent, resolve: { data: UserResolver}},
+  { path: 'login',    component: LoginComponent,    canActivate: [AuthGuard]},
+  { path: 'home',     component: HomeComponent,     resolve:     { data: UserResolver}},
   { path: 'register', component: RegisterComponent, canActivate: [AuthGuard] },
-  { path: 'user', component: UserComponent,  resolve: { data: UserResolver}},
+  { path: 'user',     component: UserComponent,     resolve:      { data: UserResolver}},
   // { path: 'detalle/:id', component: DetalleEventComponent, resolve: { data: UserResolver}},
 
 ];
