@@ -1,20 +1,21 @@
-<div class="list-group"   *ngIf="!selectedEvent" >
-  <a *ngFor="let event of events | async"
-  class="list-group-item list-group-item-action flex-column align-items-start ">
-    <div class="d-flex w-100 justify-content-between">
-      <h3 class="mb-1">{{event.name}}</h3 >
-      <small>{{event.dateIn}}</small>
-    </div>
-    <p class="mb-1">{{event.desc}}</p>
-    <small>Ingresa a ver la carta</small>
-    <!-- <a  routerLink="/detalle/{{event.uid}}"> ir</a>
-
-     <button style="float: right" class="btn btn-sm btn-success" routerLink="/detail/{{hero.id}}"
-   (click)="onSelect(event)" > VER CARTA</button>
-
-    -->
-   <button style="float: right" class="btn btn-sm btn-success" routerLink="/detalle/{{event.uid}}"
-  > VER CARTA</button>
-
-    </a>
+<div class="col-md-12 row" style="margin : 0">
+<div class="col-md-3" *ngFor="let event of events | async">
+<mat-card class="example-card " >
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{event.title}}</mat-card-title>
+    <mat-card-subtitle>${{event.price}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{event.img}}" alt="">
+  <mat-card-content>
+    <p>
+      {{event.desc}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>COMPRAR</button>
+    <button mat-button>COMPARTIR</button>
+  </mat-card-actions>
+</mat-card>
+</div>
 </div>
